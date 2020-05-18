@@ -1,0 +1,58 @@
+.footer {
+    display: block;
+    width: 70vw;
+    min-height: 60vh;
+    background: $mainGrey;
+    position: relative;
+    margin: 0 auto;
+    @include flexCenter(column);
+
+    h3 {
+        font-family: 'Marker';
+        color: $mainGreen;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+       
+    }
+    form {
+        width: 100%;
+        @include flexCenter(row);
+        margin-bottom: 5rem;
+        input {
+            width: 40%;
+            height: 5rem;
+            padding: 2rem;
+            background: transparent;
+            border: 2px solid $mainGreen;
+            border-radius: 5px 0 0 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .box {
+            @include flexCenter(column);
+            height: 5rem;
+            width: 5rem;
+            border-radius: 0 5px 5px 0;
+            background: $mainGreen;
+            font-family: 'Marker';
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+    }
+    .social {
+        @include flexCenter(row);
+        margin: 2rem 0 0;
+        i {
+            font-size:3rem;
+            margin: 0 2rem;
+        }
+
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer{
+        width: 85vw;
+    }
+}

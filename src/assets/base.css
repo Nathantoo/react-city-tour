@@ -1,0 +1,267 @@
+.navbar {
+  background: #222;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding: .8rem 1.6rem;
+}
+
+.navbar .nav-items {
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar .nav-items .nav-link {
+  text-transform: capitalize;
+  color: #ececec;
+  font-size: 1.8rem;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.navbar .nav-items .nav-link:hover {
+  color: #82b340;
+}
+
+.navbar .nav-items .active {
+  color: #82b340;
+}
+
+.tourList {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 3.2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .tourList {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tourList {
+    width: 85vw;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .tourList {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tour {
+  background: #ececec;
+  margin: 1.6rem 0;
+  border-radius: .5rem;
+}
+
+.tour .img-container {
+  position: relative;
+  width: 100%;
+}
+
+.tour .img-container img {
+  width: 100%;
+  height: 20rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  display: block;
+}
+
+.tour .img-container .close-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #82b340;
+  font-size: 3rem;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  opacity: 0;
+}
+
+.tour .img-container:hover .close-btn {
+  opacity: 1;
+}
+
+.tour .tour-info {
+  padding: 1.6rem .8rem;
+  font-size: 1.6rem;
+}
+
+.tour .tour-info h3 {
+  text-transform: uppercase;
+  color: #82b340;
+}
+
+.tour .tour-info h4 {
+  color: #222;
+  text-transform: capitalize;
+  margin: 0.5rem 0 0.9rem;
+}
+
+.tour .tour-info h5 {
+  text-transform: capitalize;
+}
+
+.tour .tour-info h5 span {
+  font-size: 2rem;
+  color: #82b340;
+  margin: .7rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: block;
+  width: 70vw;
+  min-height: 60vh;
+  background: #ececec;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer h3 {
+  font-family: 'Marker';
+  color: #82b340;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.footer form input {
+  width: 40%;
+  height: 5rem;
+  padding: 2rem;
+  background: transparent;
+  border: 2px solid #82b340;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer form input:focus {
+  outline: none;
+}
+
+.footer form .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0 5px 5px 0;
+  background: #82b340;
+  font-family: 'Marker';
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0 0;
+}
+
+.footer .social i {
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 85vw;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222;
+  background: #fff;
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.15;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+/*# sourceMappingURL=base.css.map */
