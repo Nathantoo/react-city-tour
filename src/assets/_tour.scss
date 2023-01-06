@@ -7,15 +7,15 @@
         width: 100%;
         img {
             width: 100%;
-            height: 20rem;
+            height: 25rem;
             border-top-left-radius: .5rem;
             border-top-right-radius: .5rem;
             display: block;
         }
         .close-btn {
             position: absolute;
-            top: 5%;
-            right: 5%;
+            top: 10%;
+            right: 10%;
             color: $mainGreen;
             font-size: 3rem;
             cursor: pointer;

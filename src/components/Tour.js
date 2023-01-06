@@ -17,9 +17,9 @@ export class Tour extends Component {
             }
         })
     }
-    
+  
     render() {
-        const {id,img,name,info,city} = this.props.tour;
+        const {id,img,name,info,city} =  this.props.tour;
         const {removeTour} = this.props
         return (
            <article className='tour'>
