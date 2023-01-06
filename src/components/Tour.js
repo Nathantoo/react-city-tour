@@ -10,7 +10,7 @@ export class Tour extends Component {
              showInfo: false
         }
     }
-    handleInfo = () => {
+    handleInfoData = () => {
         this.setState(() => {
             return {
                 showInfo: !this.state.showInfo
@@ -28,6 +28,17 @@ export class Tour extends Component {
                 <span className='close-btn' onClick={() => removeTour(id)}>
                    <i className='fas fa-window-close'></i>
                 </span>
+             </div>
+             <div className='tour-info'>
+              <h3>{city}</h3>
+               <h4>{name}</h4>
+               <h5>
+                   info {" "}
+                   <span onClick={this.handleInfoData}>
+                       <i className='fas fa-caret-square-down'></i>
+                   </span>
+               </h5>
+               {this.state.showInfo && <p>{info}</p>}
              </div>
              <div className='tour-info'>
               <h3>{city}</h3>

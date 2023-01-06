@@ -15,6 +15,12 @@ export default function Navbar() {
              <li>
                  <a href='/' className='nav-link active'>tours</a>
              </li>
+             <li>
+                 <a href='/' className='nav-link active'>Contacts</a>
+             </li>
+             <li>
+                 <a href='/' className='nav-link active'>Location</a>
+             </li>
           </ul>
        </nav>
     )
